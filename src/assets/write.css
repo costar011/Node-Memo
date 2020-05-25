@@ -1,0 +1,60 @@
+.w-header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-bottom: 1px solid #999999;
+}
+
+.w-header .w-header__back form input {
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.w-header .w-header__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.w-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.w-content .title,
+.w-content .description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 280px;
+}
+
+.w-content .title label,
+.w-content .description label {
+  font-size: 10px;
+  font-size: 600;
+}
+
+.w-content .title input,
+.w-content .description input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #0b0b0b;
+  padding: 10px;
+}
+
+.w-content .send {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.w-content .send input {
+  outline: none;
+  background-color: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}

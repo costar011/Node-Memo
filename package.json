@@ -1,0 +1,27 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "node express project to simple project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "build": "./src/app.js"
+  },
+  "keywords": [
+    "memo"
+  ],
+  "author": "JYR",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase": "^7.9.3",
+    "firebase-tools": "^7.14.0",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}

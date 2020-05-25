@@ -1,0 +1,21 @@
+extends layouts/main.pug
+
+block content
+    .box
+        form(action="/", method="get")
+            input.box__memo(type="text")
+            input(type="submit" value="OK")
+    .main
+        form(action="/write", method="get")
+            input(type="submit" value="메모 추가하기")
+
+    .memo
+        each memo in memoList
+            .memo__box
+                form(action="/delete", method="post")
+                    .memo__box-left
+                        input.id(type="hidden" name="id" value=`${memo.id}`)
+                        .title= memo.title
+                        .description= memo.description
+                    .memo__box-right
+                        input(type="submit" value="X")

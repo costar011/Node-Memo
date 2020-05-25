@@ -1,0 +1,19 @@
+extends layouts/main.pug
+
+block content
+    .w-header
+        .w-header__back
+            form(action="/" method="get")
+                input(type="submit" value="←")
+        .w-header__title 새로운 메모 작성하세요.
+
+    .w-content
+        form(action="/write" method="post")
+            .title
+                label TITLE
+                input(type="text" name="title"  placeholder="title...")
+            .description
+                label DESCRIPTION
+                input(type="text" name="desc" placeholder="description...")
+            .send
+                input(type="submit" value="V")
